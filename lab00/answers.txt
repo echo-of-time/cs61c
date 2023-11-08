@@ -1,3 +1,4 @@
+third_set_ls -l_1 #Show file permissions for all files in a directory
 second_set_mv_1 #Move files from one directory to the next
 second_set_chmod_2 #Change a file’s permissions
 second_set_pwd_3 #Show the directory you’re currently in
