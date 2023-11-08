@@ -1,4 +1,8 @@
-1.first_set_find_1
-2.first_set_top_ps_2
-3.first_set_exit_3
-4.first_set_diff_4
+second_set_mv_1 #Move files from one directory to the next
+second_set_chmod_2 #Change a file’s permissions
+second_set_pwd_3 #Show the directory you’re currently in
+second_set_ping_4 #Check if a host is online
+1.first_set_find_1 #walks a file hierarchy in search of a keyword
+2.first_set_top_ps_2 #displays information about processes running on your machine
+3.first_set_exit_3 #terminates a process
+4.first_set_diff_4 #help you find the difference between two files
