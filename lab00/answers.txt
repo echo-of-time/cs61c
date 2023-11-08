@@ -1,4 +1,5 @@
-1.first_set_find_1
-2.first_set_top_ps_2
-3.first_set_exit_3
-4.first_set_diff_4
+third_set_ls -l_1 #Show file permissions for all files in a directory
+1.first_set_find_1 #walks a file hierarchy in search of a keyword
+2.first_set_top_ps_2 #displays information about processes running on your machine
+3.first_set_exit_3 #terminates a process
+4.first_set_diff_4 #help you find the difference between two files
