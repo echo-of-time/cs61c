@@ -1,0 +1,19 @@
+1.use command : run [arglist] ( to start the programme with the arglist.
+                set args [arglist] ( to specify arglist for next run.
+                set args ( to specify empty argument list.
+
+2.use command : b (or) break [flie:] line(or)func ( to set breakpoint at line number [in flie] or [func].
+
+3.use command : step (or) s [count] ( to execute until another line reached; repeat [count] times if specified.
+
+4.use command : next (or) n [count] ( to excute next line, including any function calls.
+
+5.use command : continue (or) c[count] ( to continue running, if [count] sepcify, ignore this breakpoint next [count] line.
+
+6.use command : print [expression] ( to print the value of the expression.
+
+7.use command : display [/f] [expr] ( to show value of [expr] each time program stops [according to format f].
+
+8.use command : display ( to display all enable expression on list.
+
+9.use command : quit (or) q (or) [EOF] ( to exit GDB.
