@@ -1,0 +1,7 @@
+1.clean
+2.all
+3.gcc
+4.c99
+5.use "$(FOO)" or "${FOO}"
+6.MacOs
+7.31
