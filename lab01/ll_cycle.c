@@ -3,6 +3,9 @@
 
 int ll_has_cycle(node *head) {
     /* your code here */
+    if (head == NULL){
+        return 0;
+    }
     node* t1 = head;
     node* h2 = head;
     if (h2->next != NULL){
