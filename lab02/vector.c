@@ -72,10 +72,10 @@ vector_t *vector_new() {
     retval->size = /* YOUR CODE HERE */
 	           1;
     retval->data = /* YOUR CODE HERE */
-	           (int * )malloc(sizeof(int)*1);
+	           (int * )malloc(sizeof(int)*retval->size);
 
     /* Check the data attribute of our vector to make sure we got memory */
-    if (/* YOUR CODE HERE */retval == NULL) {
+    if (/* YOUR CODE HERE */retval->data == NULL) {
         free(retval);				//Why is this line necessary? Because not free will overflower
         allocation_failed();
     }
@@ -126,11 +126,17 @@ void vector_set(vector_t *v, size_t loc, int value) {
         allocation_failed();
     }
     
-    if ( loc <= v->size ) {
+    if ( loc < v->size ) {
         v->data[loc] = value;
     } else {
         v->data = (int*)realloc(v->data, sizeof(int)*loc);
-	v->size = loc;
+	if (v->data == NULL){
+	    allocation_failed();
+	}
+	for (size_t i = v->size; i < loc; i++) {
+	    v->data[i] = 0;
+	}
+	v->size = loc+1;
 	v->data[loc] = value;
     }
 }
